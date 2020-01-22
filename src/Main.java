@@ -1,10 +1,3 @@
-import com.sun.xml.internal.ws.wsdl.writer.document.BindingOperationType;
-
-import java.text.NumberFormat;
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
 public class Main {
     public static void main(String[] args) {
         int number=458978236;

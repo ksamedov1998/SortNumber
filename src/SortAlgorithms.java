@@ -1,3 +1,10 @@
+import java.lang.reflect.Array;
+import java.time.*;
+import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAmount;
+import java.time.temporal.TemporalUnit;
+
 public class SortAlgorithms {
     public static int[] sortArraywithBubbleSort(int[] array) {
         /*
@@ -53,5 +60,31 @@ public class SortAlgorithms {
             }
         return array;
     }
-
+    public static int[] sortArraywithInsertionSort(int[] array) {
+        /*
+         *       5 1 3 7 10 ->
+         *       5 3 1 7 10
+         *       7 5 3 1 10
+         *       10 7 5 3 1
+         *       Insertion Sort
+         * */
+        for(int i=1;i<array.length;i++){
+            int holder=array[i];
+            int index=i;
+            for(int j=i-1;j>=0;j--){
+                 if(holder>array[j]){
+                     System.out.println(array[i]+">"+array[j]+", swap it");
+                     int opt= array[index];
+                     array[index]=array[j];
+                     array[j]=opt;
+                     index--;
+                 }
+                 else{
+                     break;
+                 }
+                System.out.println(array[i]+"<"+array[j]);
+            }
+        }
+        return array;
+    }
 }

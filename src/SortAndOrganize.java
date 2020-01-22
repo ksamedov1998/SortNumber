@@ -12,8 +12,11 @@ public class SortAndOrganize {
     public int makeNumber(){
         int tens=getLength(number);
         int[] numberAsArray=convertToArray(tens);   //make it array to sort
-//        numberAsArray=SortAlgorithms.sortArraywithBubbleSort(numberAsArray);     //sort the array
-        numberAsArray=SortAlgorithms.sortArraywithSelectionSort(numberAsArray);     //sort the array
+//        numberAsArray=SortAlgorithms.sortArraywithBubbleSort(numberAsArray);
+//        numberAsArray=SortAlgorithms.sortArraywithSelectionSort(numberAsArray);
+          numberAsArray=SortAlgorithms.sortArraywithInsertionSort(numberAsArray);
+
+
         number=convertToInt(numberAsArray);         //converts sorted array to integer
         return  number;
     }

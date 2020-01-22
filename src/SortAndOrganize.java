@@ -14,7 +14,8 @@ public class SortAndOrganize {
         int[] numberAsArray=convertToArray(tens);   //make it array to sort
 //        numberAsArray=SortAlgorithms.sortArraywithBubbleSort(numberAsArray);
 //        numberAsArray=SortAlgorithms.sortArraywithSelectionSort(numberAsArray);
-          numberAsArray=SortAlgorithms.sortArraywithInsertionSort(numberAsArray);
+//          numberAsArray=SortAlgorithms.sortArraywithInsertionSort(numberAsArray);
+          numberAsArray=SortAlgorithms.sortArraywithQuickSort(numberAsArray);
 
 
         number=convertToInt(numberAsArray);         //converts sorted array to integer

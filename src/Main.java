@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int number=458978236;
+        int number=5172978;
 
         /*
         *   458978236 - > 987....2 sort
